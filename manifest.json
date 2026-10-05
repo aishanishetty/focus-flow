@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Flow",
+  "version": "0.2",
+  "description": "Interrupts doomscrolling with a quick brain puzzle.",
+  "content_scripts": [{
+    "matches": [
+      "https://www.instagram.com/*",
+      "https://www.youtube.com/*",
+      "https://x.com/*"
+    ],
+    "css": ["styles.css"],
+    "js": ["content.js"]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["overlay.html"],
+    "matches": [
+      "https://www.instagram.com/*",
+      "https://www.youtube.com/*",
+      "https://x.com/*"
+    ]
+  }]
+}

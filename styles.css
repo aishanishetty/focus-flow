@@ -1,0 +1,57 @@
+#ff-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 25, 0.95);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 20px;
+}
+#ff-overlay * {
+  box-sizing: border-box;
+ font-family: "Times New Roman", serif;
+}
+#ff-overlay .ff-box {
+  background: #1e2f55;
+  color: #f1f5f9;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 24px;
+}
+#ff-overlay h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #f1f5f9;
+}
+#ff-overlay .ff-muted {
+  color: #94a3b8;
+  font-size: 14px;
+}
+#ff-overlay .ff-btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 6px 6px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  background: #fca311;
+  color: #14213d;
+}
+#ff-overlay .ff-ghost {
+  background: transparent;
+  color: #f1f5f9;
+  border: 1px solid #94a3b8;
+}
+#ff-overlay .ff-opt {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #2c4175;
+  color: #f1f5f9;
+}
+#ff-overlay .ff-correct { background: #2f9e6b; }
+#ff-overlay .ff-wrong { background: #c0392b; }
+#ff-overlay .ff-hidden { display: none; }
